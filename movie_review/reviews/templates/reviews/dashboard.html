@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Filmtic - Dashboard</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'reviews/css/reset.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'reviews/css/dashboard.css' %}">
+
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#" class="nowPlaying">Now Playing</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genres<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="action" id="action">Action</a></li>
+              <li><a href="#" class="animation" id="animation">Animation</a></li>
+              <li><a href="#" class="comedy" id="comedy">Comedy</a></li>
+              <li><a href="#" class="drama" id="drama">Drama</a></li>
+              <li><a href="#" class="family" id="family">Family</a></li>
+              <li><a href="#" class="fantasy" id="fantasy">Fantasy</a></li>
+              <li><a href="#" class="music" id="music">Music</a></li>
+              <li><a href="#" class="romance" id="romance">Romance</a></li>
+              <li><a href="#" class="scifi" id="scifi">Science Fiction</a></li>
+              <li><a href="#" class="thriller" id="thriller">Thriller</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              </form>
+            </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="genreLabel">
+        <h1 id="movieGenreLabel"></h1></div>
+      <div id="movie-grid">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{% static 'reviews/js/dashboard.js' %}"></script>
+
+
+</body>
+
+</html>
